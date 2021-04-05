@@ -1,0 +1,279 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: 'NanumSquareRound';
+}
+
+body {
+    line-height:1;
+    background: #f2f2f2;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+#wrap {
+    width: 640px;
+    margin: 50px auto;
+    height:auto;
+    min-height:500px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+/*    인트로 페이지 css    */
+.intro_wrap {
+    text-align: center;
+}
+
+#intro_logo {
+    padding-top:150px;
+}
+.sub_title {
+    padding-top:10px;
+}
+
+.start, .search, .search2 {
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    padding:15px 20px;
+    font-family: 'NanumSquareRound';
+    cursor:pointer;
+    transition: all 0.5s ease;
+    font-size:12px;
+}
+
+.start, .search {
+    border:2px solid #19A4BF;
+    background: #FFF;
+    color:#19A4BF;
+}
+
+.search2 {
+    border:2px solid #19A4BF;
+    background: #19A4BF;
+    color:#fff;
+}
+
+.start:hover, .search:hover{
+	border:2px solid #19659C;
+    background: #19659C;
+    color:#fff;
+    font-size:16px;
+}
+
+.search2:hover {
+    background: #fff;
+    color:#19659C;
+    border:2px solid #19659C;
+    font-size:16px;
+}
+
+.fl_l {
+	float:left;
+}
+.fl_r {
+	float:right;
+}
+
+
+
+/*    메인 페이지 css    */
+.main_wrap {
+    text-align: center;
+}
+
+#main_logo {
+    padding-top:50px;
+}
+
+.search_wrap {
+    text-align: left;
+    padding-top:50px;
+    width:200px;
+    margin: 0 auto;
+}
+
+.search_wrap span {
+    display: block;
+}
+
+.data_box {
+    padding-top:20px;
+}
+.button_box {
+	display:block;
+	overflow:hidden;
+	clear:both;
+}
+.search_wrap input[type="text"] {
+    margin-top:10px;
+    width: 90%;
+    border: 1px solid #ccc;
+    height:20px;
+    padding:5px 5%;
+}
+
+.search_wrap input[type="date"] {
+    margin-top:10px;
+    width: 90%;
+    border: 1px solid #ccc;
+    height:20px;
+    padding:5px 5%;
+}
+
+.search_wrap input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+
+
+
+
+/* ---------결과 출력 페이지----------*/
+#calendar_wrap {
+    padding:20px 50px;
+    
+}
+.calendar {
+	width:100%;
+	border:1px solid #ccc;
+	border-collapse: collapse;
+}
+thead th {
+	background:#19A4BF;
+	color:#fff;
+	font-size: 24px;
+}
+tr th {
+	border: 1px solid #ccc;
+	padding: 15px 5px;
+}
+
+td {
+	border: 1px solid #ccc;
+	padding: 5px 5px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+td.d_today{
+	color:#FA3896;
+	font-weight:bold;
+}
+
+.pdb50 {
+	padding-bottom:50px;
+}
+
+.result_text {
+	line-height:30px;
+}
+
+.result_text span {
+	font-weight:bold;
+	color:#FA3896;
+}
+
+
+
+

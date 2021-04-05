@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1차과제 제작자 황유나</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<script>
+	// 오늘을 표시하는 변수 today
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var yyyy = today.getFullYear();
+	today = yyyy + '-' + mm + '-' + dd;
+	console.log(today);
+</script>
+<body>
+
+    <div id="wrap">
+        <div class="main_wrap">
+            <h1 id="main_logo"><img src="img/logo.png" alt="로고"/></h1>
+            <div class="sub_title">자바스크립트를 이용해 D-day를 알아보자</div>
+
+            <div class="search_wrap">
+
+				<form action="js/dday.jsp" method="post">
+					<div class="name_box">
+						<span>이름</span> 
+						<input type="text" name="username" placeholder="아라시" required/>
+					</div>
+					<div class="data_box">
+						<span>데뷔날짜</span>
+						<script>
+						//태그안에 변수를 넣는 방법
+						document.write('<input type="date" name="userdday" max="'+today+'" required/>');
+						</script>
+					</div>
+					
+					<div class="button_box">
+						<input type="submit" class="search fl_l" value="확인하기" />
+						<input type="reset" class="search2 fl_r" value="다시입력" />
+					</div>
+				</form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
